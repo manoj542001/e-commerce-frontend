@@ -7,8 +7,11 @@ import { useNavigate } from "react-router-dom";
 
 function Register() {
   const [loading, setLoading] = useState(false);
+<<<<<<< HEAD
   const [apiError, setApiError] = useState("");
   const [success, setSuccess] = useState("");
+=======
+>>>>>>> 1380236b6b0b1b834569464387484f6661213afe
 const navigate = useNavigate()
   const {
     control,
@@ -32,8 +35,11 @@ const navigate = useNavigate()
   const onSubmit = async (formData) => {
     try {
       setLoading(true);
+<<<<<<< HEAD
       setApiError("");
       setSuccess("");
+=======
+>>>>>>> 1380236b6b0b1b834569464387484f6661213afe
 
       // const response = await axios.post("http://localhost:5000/", formData)
       const response = await axios.post(
@@ -46,7 +52,10 @@ const navigate = useNavigate()
       toast.success(response.data.message)
 navigate("/login")
 
+<<<<<<< HEAD
       // setSuccess("Registration successful!");
+=======
+>>>>>>> 1380236b6b0b1b834569464387484f6661213afe
 
       reset();
     } catch (error) {
